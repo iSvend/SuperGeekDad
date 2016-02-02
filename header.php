@@ -9,7 +9,7 @@
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<?php wp_head(); ?>
 </head>
 
@@ -46,7 +46,7 @@
 
 	</div><!-- .container -->
 </nav><!-- .site-navigation -->
-<header id="masthead" class="site-header" role="banner">
+<header id="masthead" class="site-header jumbotron" role="banner">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">

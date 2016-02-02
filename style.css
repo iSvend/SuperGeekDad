@@ -38,10 +38,60 @@ Credits:
  * http://getbootstrap.com/components/
 
 */
+/* Theme Colors */
+.rgba-primary-0 { color: rgba(249,247,246,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba(255,158, 66,1) }
+.rgba-primary-2 { color: rgba(226,201,177,1) }
+.rgba-primary-3 { color: rgba(158,155,151,1) }
+.rgba-primary-4 { color: rgba(103, 98, 94,1) }
+
+.rgba-secondary-1-0 { color: rgba(171,171,173,1) }	/* Main Secondary color (1) */
+.rgba-secondary-1-1 { color: rgba( 85, 68,190,1) }
+.rgba-secondary-1-2 { color: rgba(131,127,156,1) }
+.rgba-secondary-1-3 { color: rgba(106,105,110,1) }
+.rgba-secondary-1-4 { color: rgba( 66, 66, 71,1) }
+.rgba-secondary-2-1 { color: rgba(134,231, 60,1) }
+
+
+body {
+    background:rgba(249,247,246,1);
+}
+a, a:hover {
+    color:rgba( 85, 68,190,1);
+    text-decoration: none;
+}
+.navbar, .navbar a {
+    background:rgba(249,247,246,1);
+    border-radius:0 !important;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+    color:rgba( 85, 68,190,1);    
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    background:rgba(134,231, 60,1);
+}
+.site-title a {
+    color:rgba(255,158, 66,1);
+}
+.site-footer {
+    background:rgba( 85, 68,190,1);
+}
+.site-footer h3 {
+    color:rgba(249,247,246,1);
+}
+.site-footer a, .site-footer p {
+    color:rgba(249,247,246,1);
+}
+.site-footer a:hover {
+    color:rgba( 85, 68,190,1);
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    background:rgba(134,231, 60,1);
+}
 
 /* My Minimal WordPress Styling comes here */
 
-/* This is a small security for too long strings titles */
+
 html, body. div{
     margin: 0 !important;
     padding: 0 !important;
@@ -51,20 +101,13 @@ body, h1, h2, h3, p, li {
 	word-wrap: break-word;
     color:#777;
 }
-a, a:hover {
-    color:#444;
+.navbar {
+    margin-bottom:0;
 }
-.site-footer {
-    background:#444;
-}
-.site-footer h3 {
-    color:#ccc;
-}
-.site-footer a {
-    color:#aaa;
-}
-.site-footer a:hover {
-    color:#444;
+
+/* Font sizes */
+body, p, li {
+    font-size:1.3em;
 }
 
 /* Alignment */
