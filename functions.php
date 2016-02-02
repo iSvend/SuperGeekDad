@@ -76,7 +76,7 @@ function _tk_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', '_tk' ),
 		'id'            => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="col-sm-12 col-md-4 widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
