@@ -42,6 +42,11 @@ Credits:
 /* My Minimal WordPress Styling comes here */
 
 /* This is a small security for too long strings titles */
+html, body. div{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
 body {
 	word-wrap: break-word;
     color:#777;
@@ -190,6 +195,14 @@ display: block;
 .widget select {
 	max-width: 100%;
 }
+.widget li a {
+    line-height:1.0em;
+    font-size:0.9em;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
 
 /* Nested comments? They are threaded and nested already, you just need to add your own styling to finalize!
  * For example with some margin, like the line below ;) Delete, modify, change classes in HTML if you desire another style */
