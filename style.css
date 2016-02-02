@@ -47,9 +47,24 @@ html, body. div{
     padding: 0 !important;
     width: 100%;
 }
-body {
+body, h1, h2, h3, p, li {
 	word-wrap: break-word;
     color:#777;
+}
+a, a:hover {
+    color:#444;
+}
+.site-footer {
+    background:#444;
+}
+.site-footer h3 {
+    color:#ccc;
+}
+.site-footer a {
+    color:#aaa;
+}
+.site-footer a:hover {
+    color:#444;
 }
 
 /* Alignment */

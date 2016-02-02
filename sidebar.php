@@ -8,7 +8,7 @@
 
 	</div><!-- close .main-content-inner -->
 
-	<div class="sidebar row">
+	<div class="container">
 
 		<?php // add the class "panel" below here to wrap the sidebar in Bootstrap style ;) ?>
 		<div class="sidebar-padder">
