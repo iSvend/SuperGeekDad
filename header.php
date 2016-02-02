@@ -1,12 +1,4 @@
-<?php
-/**
- * The Header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="main">
- *
- * @package _tk
- */
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -23,12 +15,8 @@
 
 <body <?php body_class(); ?>>
 	<?php do_action( 'before' ); ?>
-<nav class="site-navigation">
-<?php // substitute the class "container-fluid" below if you want a wider content area ?>
-	<div class="">
-		<div class="row">
-			<div class="site-navigation-inner col-sm-12">
-				<div class="navbar navbar-default">
+<nav class="navbar navbar-default">
+		<div class="container-fluid">
 					<div class="navbar-header">
 						<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -56,9 +44,6 @@
 						)
 					); ?>
 
-				</div><!-- .navbar -->
-			</div>
-		</div>
 	</div><!-- .container -->
 </nav><!-- .site-navigation -->
 <header id="masthead" class="site-header" role="banner">
@@ -88,6 +73,5 @@
 <div class="main-content">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
-		<div class="row">
-			<div id="content" class="main-content-inner row">
+			<div id="content" class="main-content-inner">
 
