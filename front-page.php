@@ -11,8 +11,10 @@
  */
 
 get_header(); ?>
-<div style="margin-top:300px;">
+<div style="margin-top:210px;">
+    
 	<?php while ( have_posts() ) : the_post(); ?>
+
 
 		<?php get_template_part( 'content', 'front' ); ?>
 

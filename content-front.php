@@ -3,7 +3,7 @@
  * @package _tk
  */
 ?>
-<header id="masthead" class="site-header jumbotron" role="banner" style="background:url('<?php echo get_stylesheet_directory_uri(); ?>/img/bottle.jpg') center no-repeat;background-size:cover;position: absolute;top: 52px;left: 0;width: 100vw;height: 100vh;z-index:-1;border-radius: 0;">
+<header id="masthead" class="site-header jumbotron" role="banner" style="background:url('<?php echo get_stylesheet_directory_uri(); ?>/img/bottle.jpg') center no-repeat;background-size:cover;position: absolute;top: 52px;left: 0;width: 100vw;height: 110vh;z-index:-1;border-radius: 0;">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
@@ -55,7 +55,7 @@
 	<?php else : ?>
 	<div class="entry-content">
         <h3>
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', '_tk' ) ); ?>
+		<?php the_excerpt(); ?>
         </h3>
 		<?php
 			wp_link_pages( array(
