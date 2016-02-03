@@ -11,6 +11,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>
 
@@ -47,29 +48,7 @@
 
 	</div><!-- .container -->
 </nav><!-- .site-navigation -->
-<header id="masthead" class="site-header jumbotron" role="banner">
-<?php // substitute the class "container-fluid" below if you want a wider content area ?>
-	<div class="container">
-		<div class="row">
-			<div class="site-header-inner col-sm-12">
 
-				<?php $header_image = get_header_image();
-				if ( ! empty( $header_image ) ) { ?>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
-					</a>
-				<?php } // end if ( ! empty( $header_image ) ) ?>
-
-
-				<div class="site-branding">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="lead"><?php bloginfo( 'description' ); ?></p>
-				</div>
-
-			</div>
-		</div>
-	</div><!-- .container -->
-</header><!-- #masthead -->
 
 <div class="main-content">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>

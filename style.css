@@ -56,7 +56,7 @@ Credits:
 body {
     background:rgba(249,247,246,1);
 }
-a, a:hover {
+a, a:hover, a:active, a:focus {
     color:rgba( 85, 68,190,1);
     text-decoration: none;
 }
@@ -107,10 +107,8 @@ a, a:hover {
 /* My Minimal WordPress Styling comes here */
 
 
-html, body. div{
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100%;
+html, body div{
+    font-family: 'Ubuntu', sans-serif;
 }
 body, h1, h2, h3, p, li {
 	word-wrap: break-word;
@@ -122,7 +120,7 @@ body, h1, h2, h3, p, li {
 
 /* Typography */
 .site-title a, .navbar-brand {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', sans-serif;
 }
 body, p, li {
     font-size:1.3em;
