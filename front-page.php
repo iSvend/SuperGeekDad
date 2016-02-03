@@ -11,8 +11,11 @@
  */
 
 get_header(); ?>
-<div style="margin-top:210px;">
-    
+<div style="margin-top:160px;">
+    <?php query_posts(
+            array('showposts'=>1,
+            'order'=>DESC)
+		); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 
 

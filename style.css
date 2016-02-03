@@ -88,6 +88,9 @@ a, a:hover, a:active, a:focus {
 .site-title a, .page-title {
     color:rgba(255,158, 66,1);
 }
+.entry-content {
+	
+}
 .site-footer {
     background:rgba( 85, 68,190,1);
 }
@@ -112,10 +115,12 @@ html, body div{
 }
 body, h1, h2, h3, p, li {
 	word-wrap: break-word;
-    color:#777;
 }
 .navbar {
     margin-bottom:0;
+}
+.pager li>a, .pager li>span {
+	border-radius:0;
 }
 
 /* Typography */
@@ -124,6 +129,10 @@ body, h1, h2, h3, p, li {
 }
 body, p, li {
     font-size:1.3em;
+}
+.entry-content p {
+	line-height:1.7em;
+	font-size:1.7em;
 }
 
 /* Alignment */

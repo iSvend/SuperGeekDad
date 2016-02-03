@@ -3,7 +3,7 @@
  * @package _tk
  */
 ?>
-<header id="masthead" class="site-header jumbotron" role="banner" style="background:url('<?php echo get_stylesheet_directory_uri(); ?>/img/bottle.jpg') center no-repeat;background-size:cover;position: absolute;top: 52px;left: 0;width: 100vw;height: 110vh;z-index:-1;border-radius: 0;">
+<header id="masthead" class="site-header jumbotron" role="banner" style="background:url('<?php echo get_stylesheet_directory_uri(); ?>/img/bottle.jpg') center no-repeat;background-size:cover;position: absolute;top: 52px;left: 0;width: 100%;padding:0;height: 110vh;z-index:-1;border-radius: 0;">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
@@ -34,7 +34,7 @@
 // Simply replace post_class() with post_class('panel') and check your site!
 // Remember to do this for all content templates you want to have this,
 // for example content-single.php for the post single view. ?>
-
+<div class="col-xs-12 col-sm-6">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
 		<h1 class="page-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
@@ -48,15 +48,11 @@
 
 	<?php if ( is_search() || is_archive() ) : // Only display Excerpts for Search and Archive Pages ?>
 	<div class="entry-summary">
-        <h3>
 		<?php the_excerpt(); ?>
-        </h3>
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-        <h3>
 		<?php the_excerpt(); ?>
-        </h3>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', '_tk' ),
@@ -92,3 +88,4 @@
 		<?php edit_post_link( __( 'Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->
+</div>
