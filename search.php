@@ -28,5 +28,5 @@ get_header(); ?>
 
 	<?php endif; // end of loop. ?>
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

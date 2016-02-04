@@ -3,9 +3,9 @@
  * @package _tk
  */
 ?>
-<header id="masthead" class="site-header jumbotron" role="banner" style="background:url('<?php echo get_stylesheet_directory_uri(); ?>/img/bottle.jpg') center no-repeat;background-size:cover;position: absolute;top: 52px;left: 0;width: 100%;padding:0;height: 110vh;z-index:-1;border-radius: 0;">
+<header id="masthead" class="site-header jumbotron" role="banner" style="background:url('http://res.cloudinary.com/isvend/image/upload/v1454551700/bottle_zzhpsu.jpg') center no-repeat;background-size:cover;position: absolute;top: 0;left: 0;width: 100%;padding:0;height: 100vh;z-index:-1;border-radius: 0;">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
-	<div class="container">
+	<div class="container" style="margin-top: 75px;">
 		<div class="row">
 			<div class="site-header-inner col-sm-12">
 
@@ -19,7 +19,7 @@
 
 				<div class="site-branding">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="lead"><?php bloginfo( 'description' ); ?></p>
+					<h2 style="margin-top: 0px;text-transform: uppercase;color: rgba(106,105,110,1);"><?php bloginfo( 'description' ); ?></h2>
 				</div>
 
 			</div>
@@ -41,7 +41,7 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<h3 style="text-transform:uppercase;">POSTED ON <?php the_time('M.d, Y') ?></h3>
+			<h3 style="text-transform:uppercase;color: rgba(106,105,110,1);">POSTED ON <?php the_time('M.d, Y') ?></h3>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -52,7 +52,7 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-        <p>
+        <p style="color: rgba(106,105,110,1);">
 		<?php
             $excerpt = get_the_excerpt();
             echo string_limit_words($excerpt,25);

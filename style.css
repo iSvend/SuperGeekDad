@@ -130,7 +130,9 @@ blockquote p {
 }
 
 /* My Minimal WordPress Styling comes here */
-
+html, body {
+    height:100% !important;
+}
 
 html, body div{
     font-family: 'Ubuntu', sans-serif;
@@ -143,6 +145,9 @@ body, h1, h2, h3, p, li {
 }
 .pager li>a, .pager li>span {
 	border-radius:0;
+}
+.site-footer {
+    padding-top: 35px;
 }
 
 /* Typography */
@@ -158,6 +163,7 @@ body, p, li {
 }
 .post-content p {
     font-size:1.7em !important;
+    margin-bottom: 20px;
 }
 blockquote {
     font-size:1.1em;

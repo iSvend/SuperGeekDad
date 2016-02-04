@@ -12,11 +12,19 @@
 
 get_header(); ?>
 <div style="margin-top:160px;">
-    <?php query_posts(
-            array('showposts'=>1,
-            'order'=>DESC)
-		); ?>
-	<?php while ( have_posts() ) : the_post(); ?>
+    <?php
+				
+				$sticky = get_option( 'sticky_posts' );
+				rsort( $sticky );
+				
+				$args = array(
+				'post__in' => $sticky,
+				'posts_per_page' => 1
+				);
+				
+				$sticky_query = new WP_Query( $args );
+				
+			while ( $sticky_query->have_posts() ) : $sticky_query->the_post(); ?>
 
 
 		<?php get_template_part( 'content', 'front' ); ?>
