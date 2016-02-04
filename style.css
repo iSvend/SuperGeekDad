@@ -154,7 +154,10 @@ body, p, li {
 }
 .entry-content p {
 	line-height:1.7em;
-	font-size:1.7em;
+	font-size: 2.3em;
+}
+.post-content p {
+    font-size:1.7em !important;
 }
 blockquote {
     font-size:1.1em;

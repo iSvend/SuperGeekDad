@@ -11,7 +11,7 @@
 		<h1 class="page-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content post-content">
 		<div class="entry-content-thumbnail">
 			<?php the_post_thumbnail(); ?>
 		</div>

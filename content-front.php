@@ -34,14 +34,14 @@
 // Simply replace post_class() with post_class('panel') and check your site!
 // Remember to do this for all content templates you want to have this,
 // for example content-single.php for the post single view. ?>
-<div class="col-xs-12 col-sm-6">
+<div class="jumbotron" style="background:transparent;text-align:center;">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
-		<h1 class="page-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		<h1 class="page-title" style="text-transform: uppercase;font-size: 46px; border: solid rgba( 85, 68,190,1); padding: 10px;"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php _tk_posted_on(); ?>
+			<h3 style="text-transform:uppercase;">POSTED ON <?php the_time('M.d, Y') ?></h3>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -52,7 +52,14 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php the_excerpt(); ?>
+        <p>
+		<?php
+            $excerpt = get_the_excerpt();
+            echo string_limit_words($excerpt,25);
+        ?>
+        </p>
+        <a href="<?php the_permalink(); ?>" rel="bookmark" class="btn btn-lg btn-primary">READ MORE</a>
+        
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', '_tk' ),
@@ -61,31 +68,5 @@
 		?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
-
-	<footer class="entry-meta" style="margin-bottom:70px;">
-		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', '_tk' ) );
-				if ( $categories_list && _tk_categorized_blog() ) :
-			?>
-			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', '_tk' ), $categories_list ); ?>
-			</span>
-			<?php endif; // End if categories ?>
-
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', '_tk' ) );
-				if ( $tags_list ) :
-			?>
-			<span class="tags-links">
-				<?php printf( __( 'Tagged %1$s', '_tk' ), $tags_list ); ?>
-			</span>
-			<?php endif; // End if $tags_list ?>
-		<?php endif; // End if 'post' == get_post_type() ?>
-
-		<?php edit_post_link( __( 'Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->
 </div>

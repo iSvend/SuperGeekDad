@@ -171,6 +171,21 @@ $output = $copyright;
 }
 return $output;
 }
+
+/**
+* Excerpt word limit filter
+*/
+function string_limit_words($string, $word_limit)
+{
+  $words = explode(' ', $string, ($word_limit + 1));
+  if(count($words) > $word_limit) {
+  array_pop($words);
+  //add a ... at last article when more than limit word count
+  echo implode(' ', $words)."..."; } else {
+  //otherwise
+  echo implode(' ', $words); }
+}
+
 /**
  * Comment form bootsrap
  */
