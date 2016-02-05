@@ -125,9 +125,10 @@ blockquote p {
 .site-footer a:hover {
     color:rgba( 85, 68,190,1);
 }
-.nav>li>a:hover, .nav>li>a:focus {
+.nav>li>a:hover, .nav>li>a:focus, .pager li>a, .pager li>span, .pager li>a:hover {
     background:rgba(134,231, 60,1);
 }
+
 
 /* My Minimal WordPress Styling comes here */
 html, body {
@@ -145,6 +146,9 @@ body, h1, h2, h3, p, li {
 }
 .pager li>a, .pager li>span {
 	border-radius:0;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
 }
 .site-footer {
     padding-top: 35px;

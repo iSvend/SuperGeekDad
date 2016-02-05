@@ -218,3 +218,18 @@ function bootstrap3_comment_form( $args ) {
     
     return $args;
 }
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+    return 'class="btn btn-lg btn-primary"';
+}
+add_filter('next_post_link', 'post_link_attributes');
+add_filter('previous_post_link', 'post_link_attributes');
+ 
+function post_link_attributes($output) {
+    $code = 'class="btn btn-lg btn-primary"';
+    return str_replace('<a href=', '<a '.$code.' href=', $output);
+}
+
+?>
