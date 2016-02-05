@@ -30,7 +30,7 @@ function _tk_content_nav( $nav_id ) {
 	$nav_class = ( is_single() ) ? 'post-navigation' : 'paging-navigation';
 
 	?>
-	<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
+	<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?> jumbotron">
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', '_tk' ); ?></h1>
 		<ul class="pager">
 
