@@ -232,4 +232,14 @@ function post_link_attributes($output) {
     return str_replace('<a href=', '<a '.$code.' href=', $output);
 }
 
+/**
+ * Logout stay on current page
+ **/
+ add_filter('logout_url', 'logout_here', 10, 2);
+
+function logout_here($logouturl, $redir)
+{
+$redir = get_option('siteurl');
+return $logouturl . '&redirect_to='.get_permalink();
+}
 ?>
