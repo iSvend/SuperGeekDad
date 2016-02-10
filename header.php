@@ -17,22 +17,9 @@
 
 <body <?php body_class(); ?>>
 	<?php do_action( 'before' ); ?>
-<nav class="navbar navbar-default">
-		<div class="container-fluid">
-					<div class="navbar-header">
-						<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only"><?php _e('Toggle navigation','_tk') ?> </span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-	
-						<!-- Your site title as branding in the menu -->
-						<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-					</div>
-
-					<!-- The WordPress Menu goes here -->
+    <nav id="menu" role="navigation">
+        <div class="brand">MENU</div>            
+        <!-- The WordPress Menu goes here -->
 					<?php wp_nav_menu(
 						array(
 							'theme_location' 	=> 'primary',
@@ -45,12 +32,29 @@
 							'walker' 			=> new wp_bootstrap_navwalker()
 						)
 					); ?>
+    </nav>
+<nav class="navbar navbar-default">
+		<div class="container-fluid">
+					<div class="navbar-header">
+						<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+						<button id="menu-toggle" type="button" class="navbar-toggle" style="float:left;display:initial !important;">
+							<span class="sr-only"><?php _e('Toggle navigation','_tk') ?> </span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+	
+						<!-- Your site title as branding in the menu -->
+						<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					</div>
+
+					
 
 	</div><!-- .container -->
 </nav><!-- .site-navigation -->
 
 
-<div class="main-content">
+<div class="main-content page-wrap">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 			<div id="content" class="main-content-inner">
