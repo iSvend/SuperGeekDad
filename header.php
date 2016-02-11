@@ -26,18 +26,19 @@
 							'depth'             => 2,
 							'container'         => 'div',
 							'container_class'   => 'collapse navbar-collapse',
-							'menu_class' 		=> 'nav navbar-nav',
+							'menu_class' 		=> '',
 							'fallback_cb' 		=> 'wp_bootstrap_navwalker::fallback',
-							'menu_id'			=> 'main-menu',
+							'menu_id'			=> 'slide-menu',
 							'walker' 			=> new wp_bootstrap_navwalker()
 						)
 					); ?>
     </nav>
+    <div class="main-content page-wrap">
 <nav class="navbar navbar-default">
 		<div class="container-fluid">
 					<div class="navbar-header">
 						<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-						<button id="menu-toggle" type="button" class="navbar-toggle" style="float:left;display:initial !important;">
+						<button id="menu-toggle" type="button" class="navbar-toggle" style="float:left;display:initial !important;border-radius:0;">
 							<span class="sr-only"><?php _e('Toggle navigation','_tk') ?> </span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -54,7 +55,7 @@
 </nav><!-- .site-navigation -->
 
 
-<div class="main-content page-wrap">
+
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 			<div id="content" class="main-content-inner">
