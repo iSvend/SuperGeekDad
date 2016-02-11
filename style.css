@@ -99,6 +99,9 @@ blockquote {
 blockquote p {
     color:rgba(255,158, 66,0.8);
 }
+.post-nav-jumbo {
+    background:rgba( 85, 68,190,1);
+}
 .comments-area {
     padding:60px;
     margin-top:100px;
@@ -144,8 +147,12 @@ body, h1, h2, h3, p, li {
 .navbar {
     margin-bottom:0;
 }
+.jumbotron {
+    border-radius:0 !important;
+}
 .btn {
-    border-radius:0;
+    border-radius:0 !important;
+    padding: 15px 30px !important;
 }
 .pager li>a, .pager li>span {
 	border-radius:0;
@@ -169,7 +176,7 @@ body, p, li {
 	font-size: 2.3em;
 }
 .post-content p {
-    font-size:1.7em !important;
+    font-size:1.5em !important;
     margin-bottom: 20px;
 }
 blockquote {
@@ -417,7 +424,6 @@ display: block;
     line-height: 100px;
     font-size:1.9em;
     color: rgba(255,158, 66,1);
-    background:rgba( 85, 68,190,1);
 }
 #menu ul {
     padding: 0;
@@ -433,10 +439,13 @@ display: block;
     text-decoration: none;
     text-transform: uppercase;
     color: rgba(134,231, 60,1);
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid rgba(103, 98, 94,1);
 }
 #menu ul li a:hover {
     color:rgba(255,158, 66,1);
+}
+#menu ul li:first-child a {
+    border-top: 1px solid rgba(103, 98, 94,1);
 }
 body {
     overflow-x:hidden;
@@ -444,7 +453,7 @@ body {
 body.open #menu {
     left: 0;
 }
-.page-wrap, .site-header {
+.page-wrap, .site-header, .navbar-fixed-top {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -454,6 +463,6 @@ body.open #menu {
          -o-transition: all .3s ease-in;
             transition: all .3s ease-in;
 }
-body.open .page-wrap, body.open .site-header {
+body.open .page-wrap, body.open .site-header, body.open .navbar-fixed-top {
     margin-left: 300px;
 }

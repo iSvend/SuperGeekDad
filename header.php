@@ -34,7 +34,7 @@
 					); ?>
     </nav>
     <div class="main-content page-wrap">
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 					<div class="navbar-header">
 						<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
@@ -57,6 +57,6 @@
 
 
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
-	<div class="container">
+	<div class="container" style="margin-top:50px;">
 			<div id="content" class="main-content-inner">
 
