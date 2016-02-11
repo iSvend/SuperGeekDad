@@ -18,20 +18,21 @@
 <body <?php body_class(); ?>>
 	<?php do_action( 'before' ); ?>
     <nav id="menu" role="navigation">
-        <div class="brand">MENU</div>            
+        <div class="brand">MENU</div>
+        <?php get_sidebar('2'); ?>           
         <!-- The WordPress Menu goes here -->
-					<?php wp_nav_menu(
+					<!-- ?php wp_nav_menu(
 						array(
 							'theme_location' 	=> 'primary',
 							'depth'             => 2,
 							'container'         => 'div',
-							'container_class'   => 'collapse navbar-collapse',
+							'container_class'   => '',
 							'menu_class' 		=> '',
 							'fallback_cb' 		=> 'wp_bootstrap_navwalker::fallback',
 							'menu_id'			=> 'slide-menu',
 							'walker' 			=> new wp_bootstrap_navwalker()
 						)
-					); ?>
+					); ? -->
     </nav>
     <div class="main-content page-wrap">
 <nav class="navbar navbar-default navbar-fixed-top">

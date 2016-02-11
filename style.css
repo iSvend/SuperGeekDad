@@ -136,6 +136,10 @@ blockquote p {
 /* My Minimal WordPress Styling comes here */
 html, body {
     height:100% !important;
+        -webkit-transition: all .2s ease;
+       -moz-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
 }
 
 html, body div{
@@ -154,6 +158,9 @@ body, h1, h2, h3, p, li {
     border-radius:0 !important;
     padding: 15px 30px !important;
 }
+.form-control {
+    border-radius:0;
+}
 .pager li>a, .pager li>span {
 	border-radius:0;
     padding: 10px 16px;
@@ -165,7 +172,7 @@ body, h1, h2, h3, p, li {
 }
 
 /* Typography */
-.site-title a, .navbar-brand {
+.site-title a, .navbar-brand, .page-title {
     font-family: 'Press Start 2P', sans-serif;
 }
 body, p, li {
@@ -423,29 +430,32 @@ display: block;
 #menu .brand {
     line-height: 100px;
     font-size:1.9em;
-    color: rgba(255,158, 66,1);
+    color: rgba(134,231, 60,1);
 }
 #menu ul {
     padding: 0;
 }
-
-#menu ul li a {
+.sidebar-2 {
+    
+}
+#menu ul li a, .nav>li {
     display: block;
-    line-height: 50px;
+    height: 50px;
     -webkit-transition: all .3s ease;
        -moz-transition: all .3s ease;
          -o-transition: all .3s ease;
             transition: all .3s ease;
+    text-align:left;
     text-decoration: none;
     text-transform: uppercase;
     color: rgba(134,231, 60,1);
-    border-bottom: 1px solid rgba(103, 98, 94,1);
+    border-bottom: 1px solid rgba(103, 98, 94,0.4);
 }
 #menu ul li a:hover {
     color:rgba(255,158, 66,1);
 }
-#menu ul li:first-child a {
-    border-top: 1px solid rgba(103, 98, 94,1);
+#menu ul li:first-child a, .nav>li {
+    border-top: 1px solid rgba(103, 98, 94,0.4);
 }
 body {
     overflow-x:hidden;

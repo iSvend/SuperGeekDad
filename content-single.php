@@ -6,7 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
-		<h1 class="page-title"><?php the_title(); ?></h1>
+		<h1 class="post-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
 			<?php _tk_posted_on(); ?>
