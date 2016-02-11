@@ -16,6 +16,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div style="overflow-x:hidden !important;">
 	<?php do_action( 'before' ); ?>
     <nav id="menu" role="navigation">
         <div class="brand">MENU</div>
@@ -37,7 +38,7 @@
     <div class="main-content page-wrap">
 <nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
-					<div class="navbar-header">
+					<div>
 						<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 						<button id="menu-toggle" type="button" class="navbar-toggle" style="float:left;display:initial !important;border-radius:0;">
 							<span class="sr-only"><?php _e('Toggle navigation','_tk') ?> </span>
