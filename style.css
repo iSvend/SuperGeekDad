@@ -435,10 +435,9 @@ display: block;
 #menu ul {
     padding: 0;
 }
-.sidebar-2 {
-    
-}
+
 #menu ul li a, .nav>li {
+	white-space:normal;
     display: block;
     height: 50px;
     -webkit-transition: all .3s ease;
@@ -457,8 +456,9 @@ display: block;
 #menu ul li:first-child a, .nav>li {
     border-top: 1px solid rgba(103, 98, 94,0.4);
 }
-body {
+body.open {
     overflow-x:hidden;
+	white-space: nowrap;
 }
 body.open #menu {
     left: 0;
