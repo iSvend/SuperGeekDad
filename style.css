@@ -79,11 +79,11 @@ a, a:hover, a:active, a:focus {
     border-color:rgba(255,158, 66,1);
 }
 .navbar, .navbar a {
-    background:rgba(249,247,246,1);
+    background:rgba( 85, 68,190,1);
     border-radius:0 !important;
 }
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
-    color:rgba( 85, 68,190,1);    
+    color:rgba(134,231, 60,1);    
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     background:rgba(134,231, 60,1);
@@ -412,8 +412,8 @@ display: block;
 #menu {
     position: fixed;
     top: 0;
-    left: -300px;
-    width: 300px;
+    left: -260px;
+    width: 260px;
     height: 100%;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -458,7 +458,6 @@ display: block;
 }
 body.open {
     overflow-x:hidden;
-	white-space: nowrap;
 }
 body.open #menu {
     left: 0;
@@ -473,6 +472,9 @@ body.open #menu {
          -o-transition: all .3s ease-in;
             transition: all .3s ease-in;
 }
-body.open .page-wrap, body.open .site-header, body.open .navbar-fixed-top {
-    margin-left: 300px;
+body.open .page-wrap, body.open .site-header {
+    z-index:-1;
+}
+body.open .navbar-fixed-top{
+    margin-left:260px;
 }
