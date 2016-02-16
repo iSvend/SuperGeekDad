@@ -81,6 +81,14 @@ function _tk_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Sidebar-2', '_tk' ),
+		'id'            => 'sidebar-2',
+		'before_widget' => '<aside id="%1$s" class="widget sidebar-2 %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
 }
 add_action( 'widgets_init', '_tk_widgets_init' );
 
@@ -113,7 +121,8 @@ function _tk_scripts() {
 	if ( is_singular() && wp_attachment_is_image() ) {
 		wp_enqueue_script( '_tk-keyboard-image-navigation', get_template_directory_uri() . '/includes/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
-
+    // load bootstrap js
+	wp_enqueue_script('slide_menu', get_template_directory_uri().'/includes/js/slide_menu.js', array() );
 }
 add_action( 'wp_enqueue_scripts', '_tk_scripts' );
 

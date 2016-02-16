@@ -79,11 +79,11 @@ a, a:hover, a:active, a:focus {
     border-color:rgba(255,158, 66,1);
 }
 .navbar, .navbar a {
-    background:rgba(249,247,246,1);
+    background:rgba( 85, 68,190,1);
     border-radius:0 !important;
 }
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
-    color:rgba( 85, 68,190,1);    
+    color:rgba(134,231, 60,1);    
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     background:rgba(134,231, 60,1);
@@ -98,6 +98,9 @@ blockquote {
 }
 blockquote p {
     color:rgba(255,158, 66,0.8);
+}
+.post-nav-jumbo {
+    background:rgba( 85, 68,190,1);
 }
 .comments-area {
     padding:60px;
@@ -133,6 +136,10 @@ blockquote p {
 /* My Minimal WordPress Styling comes here */
 html, body {
     height:100% !important;
+        -webkit-transition: all .2s ease;
+       -moz-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
 }
 
 html, body div{
@@ -143,6 +150,16 @@ body, h1, h2, h3, p, li {
 }
 .navbar {
     margin-bottom:0;
+}
+.jumbotron {
+    border-radius:0 !important;
+}
+.btn {
+    border-radius:0 !important;
+    padding: 15px 30px !important;
+}
+.form-control {
+    border-radius:0;
 }
 .pager li>a, .pager li>span {
 	border-radius:0;
@@ -155,7 +172,7 @@ body, h1, h2, h3, p, li {
 }
 
 /* Typography */
-.site-title a, .navbar-brand {
+.site-title a, .navbar-brand, .page-title {
     font-family: 'Press Start 2P', sans-serif;
 }
 body, p, li {
@@ -166,7 +183,7 @@ body, p, li {
 	font-size: 2.3em;
 }
 .post-content p {
-    font-size:1.7em !important;
+    font-size:1.5em !important;
     margin-bottom: 20px;
 }
 blockquote {
@@ -391,4 +408,73 @@ display: block;
 }
 */
 
-/* Hey, if you don't need my comments anymore, just delete me! :)  */
+/* Slide Menu Stuff  */
+#menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-transition: all .3s ease-in;
+       -moz-transition: all .3s ease-in;
+         -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+    text-align: center;
+    z-index:1;
+    background-color: rgba( 66, 66, 71,1);
+}
+#menu .brand {
+    line-height: 100px;
+    font-size:1.9em;
+    color: rgba(134,231, 60,1);
+}
+#menu ul {
+    padding: 0;
+}
+
+#menu ul li a, .nav>li {
+	white-space:normal;
+    display: block;
+    height: 50px;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+    text-align:left;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(134,231, 60,1);
+    border-bottom: 1px solid rgba(103, 98, 94,0.4);
+}
+#menu ul li a:hover {
+    color:rgba(255,158, 66,1);
+}
+#menu ul li:first-child a, .nav>li {
+    border-top: 1px solid rgba(103, 98, 94,0.4);
+}
+body.open {
+    overflow-x:hidden;
+}
+body.open #menu {
+    left: 0;
+}
+.page-wrap, .site-header, .navbar-fixed-top {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-transition: all .3s ease-in;
+       -moz-transition: all .3s ease-in;
+         -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+}
+body.open .page-wrap, body.open .site-header {
+    z-index:-1;
+}
+body.open .navbar-fixed-top{
+    margin-left:260px;
+}

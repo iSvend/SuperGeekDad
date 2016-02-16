@@ -37,7 +37,7 @@
 <div class="jumbotron" style="background:transparent;text-align:center;">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
-		<h1 class="page-title" style="text-transform: uppercase;font-size: 46px; border: solid rgba( 85, 68,190,1); padding: 10px;"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		<h1 style="text-transform: uppercase;font-size: 46px; border: solid rgba( 85, 68,190,1); padding: 10px;"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
