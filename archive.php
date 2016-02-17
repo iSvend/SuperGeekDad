@@ -73,6 +73,7 @@ get_header(); ?>
 					endif;
 				?>
 			</header><!-- .page-header -->
+            <div class="grid js-masonry row" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 190 }'>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -86,6 +87,7 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
+            </div>
 
 			<?php _tk_content_nav( 'nav-below' ); ?>
 
