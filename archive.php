@@ -73,7 +73,7 @@ get_header(); ?>
 					endif;
 				?>
 			</header><!-- .page-header -->
-            <div class="grid js-masonry row" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 190 }'>
+            <div class="grid js-masonry row" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer", "transitionDuration": "0.8s" }'>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

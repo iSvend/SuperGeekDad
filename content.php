@@ -13,7 +13,8 @@
 // Remember to do this for all content templates you want to have this,
 // for example content-single.php for the post single view. ?>
 
-<div class="grid-item col-xs-12 col-sm-3" id="post-<?php the_ID(); ?>">
+<div class="grid-item grid-sizer col-xs-12 col-sm-4" id="post-<?php the_ID(); ?>">
+<div style="margin:20px 5px;padding:20px 40px;background:#ccc;">
 	<header>
 		<h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
@@ -69,4 +70,5 @@
 
 		<?php edit_post_link( __( 'Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
+    </div>
 </div><!-- #post-## -->
