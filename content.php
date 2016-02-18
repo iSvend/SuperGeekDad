@@ -14,6 +14,11 @@
 // for example content-single.php for the post single view. ?>
 
 <div class="grid-item grid-sizer col-xs-12 col-sm-4" id="post-<?php the_ID(); ?>">
+<!-- div class="col-xs-12" style="text-align:center;">
+<div style="border-radius:50%;width:100px;height:100px;background:rgba(134,231, 60,.7);line-height:100px;text-align:center;position:absolute;top:-40px;">
+    php printf( _x( '%s ago', '%s = human-readable time difference', 'your-text-domain' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) ); 
+</div>
+</div-->
 <div style="margin:20px 5px;padding:20px 40px;background:#ddd;">
 	<header>
 		<h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
