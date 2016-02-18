@@ -14,7 +14,7 @@
 // for example content-single.php for the post single view. ?>
 
 <div class="grid-item grid-sizer col-xs-12 col-sm-4" id="post-<?php the_ID(); ?>">
-<div style="margin:20px 5px;padding:20px 40px;background:#ccc;">
+<div style="margin:20px 5px;padding:20px 40px;background:#ddd;">
 	<header>
 		<h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
