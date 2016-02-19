@@ -14,9 +14,9 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content post-content">
-		<div class="entry-content-thumbnail">
-			<?php the_post_thumbnail(); ?>
-		</div>
+		<!-- div class="entry-content-thumbnail" -->
+			<!-- ?php the_post_thumbnail(); ? -->
+		<!--/div -->
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
