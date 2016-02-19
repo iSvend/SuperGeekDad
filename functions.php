@@ -123,6 +123,9 @@ function _tk_scripts() {
 	}
     // load bootstrap js
 	wp_enqueue_script('slide_menu', get_template_directory_uri().'/includes/js/slide_menu.js', array() );
+    
+    // load masonry js 
+    wp_enqueue_script('masonry', get_template_directory_uri().'/includes/js/masonry.js', array('jquery'));
 }
 add_action( 'wp_enqueue_scripts', '_tk_scripts' );
 

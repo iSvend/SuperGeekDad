@@ -235,6 +235,7 @@ img[class*="wp-image-"] {
 	margin-top: 10px;
 }
 
+
 /* WP Gallery */
 .gallery {
 	margin-bottom: 1.5em;
@@ -482,4 +483,10 @@ body.open .navbar-fixed-top{
        -moz-transition: all .5s ease;
          -o-transition: all .5s ease;
             transition: all .5s ease;
+}
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
