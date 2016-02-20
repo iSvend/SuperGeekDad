@@ -83,7 +83,8 @@ a, a:hover, a:active, a:focus {
     border-radius:0 !important;
 }
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
-    color:rgba(134,231, 60,1);    
+    color:rgba(134,231, 60,1);
+    line-height: 32px;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     background:rgba(134,231, 60,1);
