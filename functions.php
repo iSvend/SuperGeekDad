@@ -199,6 +199,12 @@ function string_limit_words($string, $word_limit)
 }
 
 /**
+* Thumbnail size
+*/
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 260, 260, array( 'center', 'center')  ); // 260 pixels wide by 260 pixels tall, crop from the center
+
+/**
  * Comment form bootsrap
  */
 add_filter( 'comment_form_default_fields', 'bootstrap3_comment_form_fields' );
