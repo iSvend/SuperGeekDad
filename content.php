@@ -24,6 +24,7 @@
 		</div>
 		
 		<header style="margin-top:80px;">
+            <?php the_post_thumbnail(); ?>
 			<h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 			
 			<?php if ( 'post' == get_post_type() ) : ?>

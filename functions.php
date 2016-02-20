@@ -125,7 +125,7 @@ function _tk_scripts() {
 	wp_enqueue_script('slide_menu', get_template_directory_uri().'/includes/js/slide_menu.js', array() );
     
     // load masonry js 
-    wp_enqueue_script('masonry', get_template_directory_uri().'/includes/js/masonry.js', array('jquery'));
+    wp_enqueue_script('masonry', get_template_directory_uri().'/includes/js/masonry.js', array('jquery'), null, true);
 }
 add_action( 'wp_enqueue_scripts', '_tk_scripts' );
 
