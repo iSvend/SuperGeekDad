@@ -14,7 +14,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header>
+			<header class="jumbotron" style="margin:0;color:rgba(255,158,66,1);">
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) :
@@ -73,6 +73,7 @@ get_header(); ?>
 					endif;
 				?>
 			</header><!-- .page-header -->
+            <div class="grid js-masonry row">
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -86,6 +87,7 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
+            </div>
 
 			<?php _tk_content_nav( 'nav-below' ); ?>
 

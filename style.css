@@ -83,10 +83,14 @@ a, a:hover, a:active, a:focus {
     border-radius:0 !important;
 }
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
-    color:rgba(134,231, 60,1);    
+    color:rgba(134,231, 60,1);
+    line-height: 32px;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     background:rgba(134,231, 60,1);
+}
+.navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
+	background:transparent !important;
 }
 .site-title a, .page-title {
     color:rgba(255,158, 66,1);
@@ -101,6 +105,8 @@ blockquote p {
 }
 .post-nav-jumbo {
     background:rgba( 85, 68,190,1);
+}
+.grid-item {
 }
 .comments-area {
     padding:60px;
@@ -136,10 +142,6 @@ blockquote p {
 /* My Minimal WordPress Styling comes here */
 html, body {
     height:100% !important;
-        -webkit-transition: all .2s ease;
-       -moz-transition: all .2s ease;
-         -o-transition: all .2s ease;
-            transition: all .2s ease;
 }
 
 html, body div{
@@ -175,12 +177,9 @@ body, h1, h2, h3, p, li {
 .site-title a, .navbar-brand, .page-title {
     font-family: 'Press Start 2P', sans-serif;
 }
-body, p, li {
-    font-size:1.3em;
-}
 .entry-content p {
 	line-height:1.7em;
-	font-size: 2.3em;
+	font-size: 30px;
 }
 .post-content p {
     font-size:1.5em !important;
@@ -236,6 +235,7 @@ img[class*="wp-image-"] {
 	text-align: center;
 	margin-top: 10px;
 }
+
 
 /* WP Gallery */
 .gallery {
@@ -477,4 +477,17 @@ body.open .page-wrap, body.open .site-header {
 }
 body.open .navbar-fixed-top{
     margin-left:260px;
+}
+/* Masonry Styles */
+.grid-item {
+        -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+}
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }

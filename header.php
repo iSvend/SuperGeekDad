@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -40,11 +42,9 @@
 		<div class="container-fluid">
 					<div>
 						<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-						<button id="menu-toggle" type="button" class="navbar-toggle" style="float:left;display:initial !important;border-radius:0;">
+						<button id="menu-toggle" type="button" class="navbar-toggle" style="float:left;display:initial !important;border:none;">
 							<span class="sr-only"><?php _e('Toggle navigation','_tk') ?> </span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
+							<i class="fa fa-2x fa-bars"></i>
 						</button>
 	
 						<!-- Your site title as branding in the menu -->
