@@ -24,7 +24,13 @@
 		</div>
 		
 		<header style="margin-top:80px;">
-            <?php the_post_thumbnail(); ?>
+		<div style="height:260px;">
+            <?php if ( has_post_thumbnail()) {
+				the_post_thumbnail();
+				} else {?>
+				<img src="<?php bloginfo('template_directory'); ?>/img/skpixel.jpg" alt="<?php the_title(); ?>">
+				<?php } ?>
+				</div>
 			<h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 			
 			<?php if ( 'post' == get_post_type() ) : ?>
