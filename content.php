@@ -16,14 +16,8 @@
 <div class="grid-item grid-sizer col-xs-12 col-sm-4" id="post-<?php the_ID(); ?>">
 	
 	<div style="margin:20px 5px;padding:20px 40px;background:#ddd;">
-		
-		<div class="col-xs-12" style="text-align:center;">
-			<div style="border-radius:50%;width:100px;height:100px;background:rgba(134,231, 60,.7);line-height:100px;text-align:center;margin:-40px auto;">
-				<span style="font-weight:bold;"><?php printf( _x( '%s ago', '%s = human-readable time difference', 'your-text-domain' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) ); ?></span>
-			</div>
-		</div>
-		
-		<header style="margin-top:80px;">
+				
+		<header style="margin-top:10px;">
 		<div style="height:260px;">
             <?php if ( has_post_thumbnail()) {
 				the_post_thumbnail();
@@ -35,7 +29,7 @@
 			
 			<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta">
-				<?php _tk_posted_on(); ?>
+				<span style="font-weight:bold;"><?php printf( _x( '%s ago', '%s = human-readable time difference', 'your-text-domain' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) ); ?></span>
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
 		</header><!-- .entry-header -->

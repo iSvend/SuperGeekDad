@@ -14,7 +14,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header>
+			<header class="jumbotron" style="margin:0;color:rgba(255,158,66,1);">
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) :
