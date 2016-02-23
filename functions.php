@@ -121,11 +121,11 @@ function _tk_scripts() {
 	if ( is_singular() && wp_attachment_is_image() ) {
 		wp_enqueue_script( '_tk-keyboard-image-navigation', get_template_directory_uri() . '/includes/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
-    // load bootstrap js
+    // load slide_menu js
 	wp_enqueue_script('slide_menu', get_template_directory_uri().'/includes/js/slide_menu.js', array() );
     
     // load masonry js 
-    wp_enqueue_script('masonry', get_template_directory_uri().'/includes/js/masonry.js', array('jquery'), null, true);
+    wp_enqueue_script('masonryconfig', get_template_directory_uri().'/includes/js/masonry.js', array('jquery'), null, true );
 }
 add_action( 'wp_enqueue_scripts', '_tk_scripts' );
 
