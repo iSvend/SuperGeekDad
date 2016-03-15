@@ -104,7 +104,7 @@ blockquote {
     padding: 0 10px;
 }
 blockquote p {
-    color:rgba(255,158, 66,0.8);
+    color:rgba(242,44,44,1);
 }
 .post-nav-jumbo {
     background:rgba(37,104,155,1);
@@ -179,6 +179,9 @@ body, h1, h2, h3, p, li {
 /* Typography */
 .site-title a, .navbar-brand, .page-title {
     font-family: 'Press Start 2P', sans-serif;
+}
+.page-title {
+    padding-left:40px;
 }
 .entry-content p {
 	line-height:1.7em;

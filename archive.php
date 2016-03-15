@@ -13,8 +13,8 @@ get_header(); ?>
 	<div class="content-padder">
 
 		<?php if ( have_posts() ) : ?>
-
-			<header class="jumbotron" style="margin:0;color:rgba(242,44,44,1);">
+        <div class="jumbotron">
+			<header style="margin:0;color:rgba(242,44,44,1);">
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) :
@@ -72,7 +72,8 @@ get_header(); ?>
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
 					endif;
 				?>
-			</header><!-- .page-header -->
+			</header>
+            </div><!-- .page-header -->
             <div class="grid js-masonry row">
 
 			<?php /* Start the Loop */ ?>

@@ -59,6 +59,6 @@
 
 
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
-	<div class="container blog-wrap" style="margin-top:50px;">
+	<div class="blog-wrap col-xs-12" style="margin-top:50px;">
 			<div id="content" class="main-content-inner">
 
