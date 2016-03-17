@@ -11,7 +11,7 @@
  */
 
 get_header(); ?>
-<div style="margin-top:160px;">
+<div class="container" style="margin-top:160px;">
     <?php
 				
 				$sticky = get_option( 'sticky_posts' );
