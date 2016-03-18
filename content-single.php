@@ -5,7 +5,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header>
+	<header class="jumbotron header">
 		<h1 class="post-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">

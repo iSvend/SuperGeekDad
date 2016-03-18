@@ -13,8 +13,8 @@ get_header(); ?>
 	<div class="content-padder">
 
 		<?php if ( have_posts() ) : ?>
-        <div class="jumbotron">
-			<header style="margin:0;color:rgba(242,44,44,1);">
+        <div class="jumbotron header" style="background:rgba(37,104,155,1) !important;">
+			<header style="margin:0;color:rgba(200,233,42,1);">
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) :
